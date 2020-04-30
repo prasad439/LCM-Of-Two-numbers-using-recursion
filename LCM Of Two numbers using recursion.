@@ -1,0 +1,28 @@
+#include<studio.h>
+#include<conio.h>
+int lcm(int,int);
+int main()
+{
+ int i,j, result;
+printf("Enter the first number : ", i );
+scanf("%d" ,&i);
+printf("Enter the second number : ", j);
+scanf("%d" ,&j);
+if(i>j)
+result=lcm (j,i);
+else
+result lcm (i,j);
+printf("The LCM  of %d and %d is %d\n, i,j, result);
+}
+int lcm(int i, int j)
+{
+static int m = 0 ;
+m=m+i ;
+if(m % i == 0 && m % j == 0){
+return m;
+}
+else{
+lcm(i,j);
+}
+}
+
